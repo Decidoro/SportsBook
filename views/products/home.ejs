@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsMania</title>
+</head>
+<body>
+    <h1>SportsMania</h1>
+    <ul>
+        <% for (let product of products) { %>
+            <li><a href="/MongooseExpress/<%=product._id%>"></a> <%=product.name  %></li>
+            <% } %>
+    </ul>
+    <ol>
+        <% for (let product of products) { %>
+        <li><%=product.category  %></li>
+        <% } %>
+    </ol>
+</body>
+</html>
